@@ -24,7 +24,7 @@ a {
 
 h2,
 h3 {
-    margin-top: unset;
+    margin-top: 0;
     padding-top: 1em;
 }
 
@@ -39,7 +39,7 @@ a {
 /* Navigation */
 .name {
     padding: 1em;
-    font-size: 1.25em;      /* Tseki fonti DEVToolsis */
+    font-size: 1.25em;  
     margin: 0;
     text-transform: uppercase;
 }
@@ -54,7 +54,7 @@ a {
 .main-nav li {
     text-align: center;
     background: rgba(240, 231, 238, 0.979);
-    margin-top: 6px;        /*  vaata pixlid üle kindlalt !!!  */
+    margin-top: 0px;        
     margin-bottom: 10px;
 }
 
@@ -77,6 +77,10 @@ img {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    }
+
+    .bt-navbar {
+        visibility: hidden;
     }
 /* LayoutContainers */
 .container {
@@ -143,7 +147,7 @@ footer ul {
     }
 
     .pLeft {
-        padding-top: 65px;
+        padding-top: 30px;
     }
 
 
@@ -168,7 +172,7 @@ footer ul {
 		clear: both;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 1024px) {
 
     body {
         margin: auto;
@@ -192,5 +196,13 @@ footer ul {
         width: calc(33.33% - 16px);
         float: left;
         padding-left: 1em;
+    }
+
+    .bt-nav {
+        visibility: hidden;
+    }
+    .bt-navbar {
+        visibility: visible;
+        float: right;
     }
 }
